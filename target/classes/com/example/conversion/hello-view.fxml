@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="main" alignment="CENTER" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.conversion.ConversionController">
+
+
+
+
+
+
+        <VBox fx:id="convert_pane" alignment="CENTER_LEFT" spacing="10">
+
+                <Text fx:id="titre" > CONVERTISSEUR DE MONNAIES </Text>
+                <Label>Quel est la somme à convertir?</Label>
+
+                <TextField fx:id="somme1" styleClass="textField" />
+                <Label fx:id="errorNumber" textFill="red" />
+
+
+
+                <Label>Selectionner la monnaie à convertir</Label>
+                <ChoiceBox fx:id="monnaies" styleClass="textField" value="monnaies">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Franc CFA" />
+                            <String fx:value="Dollars USD" />
+                            <String fx:value="Euro" />
+                            <String fx:value="Dinar Tunisien" />
+                            <String fx:value="Livre Sterling" />
+                            <String fx:value="Roupie Indienne" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <Text fx:id="currencyError" fill="red" />
+
+                <Label>Le montant en CAD est de</Label>
+                <TextField fx:id="tauxResult" editable="false" styleClass="textField" />
+                <Button fx:id="btn" onAction="#Calculer">CALCULER</Button>
+
+
+
+        </VBox>
+
+</VBox>

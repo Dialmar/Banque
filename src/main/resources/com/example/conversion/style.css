@@ -1,0 +1,27 @@
+#main{
+    -fx-background-color: #c6d1dc;
+}
+#titre{
+    -fx-font-size: 18px;
+    -fx-padding: 10px;
+    -fx-font-size: bold;
+}
+
+Button {
+    -fx-background-color: rgba(38, 38, 182, 0.8);
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+}
+.textField{
+    -fx-max-height: 140px;
+    -fx-max-width: 200px;
+}
+
+#convert_pane{
+    -fx-background-color: #e2e2ea;
+    -fx-max-width: 500px;
+    -fx-padding: 20px;
+}
